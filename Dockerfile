@@ -6,6 +6,5 @@ RUN npm install
 RUN npm install -g knex
 COPY . .
 RUN npm run build
-RUN rm -rf src
 EXPOSE 3000
 CMD ["node","dist/app.js"]
